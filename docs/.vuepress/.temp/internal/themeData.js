@@ -1,14 +1,1 @@
-export const themeData = JSON.parse("{\"logo\":null,\"navbar\":[],\"sidebar\":[{\"text\":\"형법\",\"link\":\"/law/형법/00.md\",\"children\":[{\"text\":\"형법 제1장 총강\",\"link\":\"/law/형법/01.md\"}]},{\"text\":\"철학\",\"link\":\"/philosophy/철학/index.md\",\"children\":[{\"text\":\"우리 사회는 공정한가?\",\"link\":\"/philosophy/우리-사회는-공정한가.md\"}]}],\"locales\":{\"/\":{\"selectLanguageName\":\"English\"}},\"colorMode\":\"auto\",\"colorModeSwitch\":true,\"repo\":null,\"selectLanguageText\":\"Languages\",\"selectLanguageAriaLabel\":\"Select language\",\"sidebarDepth\":2,\"editLink\":true,\"editLinkText\":\"Edit this page\",\"lastUpdated\":true,\"contributors\":true,\"contributorsText\":\"Contributors\",\"notFound\":[\"There's nothing here.\",\"How did we get here?\",\"That's a Four-Oh-Four.\",\"Looks like we've got some broken links.\"],\"backToHome\":\"Take me home\",\"openInNewWindow\":\"open in new window\",\"toggleColorMode\":\"toggle color mode\",\"toggleSidebar\":\"toggle sidebar\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateThemeData) {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ themeData }) => {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  })
-}
+export const themeData = JSON.parse("{\"logo\":null,\"navbar\":[],\"sidebar\":[{\"text\":\"법학\",\"link\":\"/law/법학/index.md\",\"children\":[{\"text\":\"민사법\",\"children\":[{\"text\":\"자연인(自然人)\",\"link\":\"/law/민사법/자연인.md\"}]},{\"text\":\"판례 연구소\",\"children\":[{\"text\":\"헌법 재판소\",\"link\":\"/law/판례/헌재.md\"},{\"text\":\"민사법\",\"link\":\"/law/판례/민사법.md\"},{\"text\":\"형사법\",\"link\":\"/law/판례/형사법.md\"}]}]},{\"text\":\"Software Engineering\",\"children\":[{\"text\":\"Back-End\",\"children\":[{\"text\":\"Auth\",\"link\":\"/software-engineering/back-end/auth.md\"}]}]},{\"text\":\"articles\",\"children\":[{\"text\":\"Software Engineering\",\"link\":\"/articles/software-engineering.md\"}]}],\"locales\":{\"/\":{\"selectLanguageName\":\"English\"}},\"colorMode\":\"auto\",\"colorModeSwitch\":true,\"repo\":null,\"selectLanguageText\":\"Languages\",\"selectLanguageAriaLabel\":\"Select language\",\"sidebarDepth\":2,\"editLink\":true,\"editLinkText\":\"Edit this page\",\"lastUpdated\":true,\"contributors\":true,\"contributorsText\":\"Contributors\",\"notFound\":[\"There's nothing here.\",\"How did we get here?\",\"That's a Four-Oh-Four.\",\"Looks like we've got some broken links.\"],\"backToHome\":\"Take me home\",\"openInNewWindow\":\"open in new window\",\"toggleColorMode\":\"toggle color mode\",\"toggleSidebar\":\"toggle sidebar\"}")

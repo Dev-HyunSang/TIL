@@ -4,7 +4,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
   lang: "en-US",
-
+  base: "/TIL/",
   title: "HyunSang's Today I Learned",
   description: "Cyber Security, Software Engineering, and Law",
 
@@ -13,17 +13,45 @@ export default defineUserConfig({
     navbar: [],
     sidebar: [
       {
-        text: "형법",
-        link: "/law/형법/00.md",
-        children: [{ text: "형법 제1장 총강", link: "/law/형법/01.md" }],
-      },
-      {
-        text: "철학",
-        link: "/philosophy/철학/index.md",
+        text: "법학",
+        link: "/law/법학/index.md",
         children: [
           {
-            text: "우리 사회는 공정한가?",
-            link: "/philosophy/우리-사회는-공정한가.md",
+            text: "민사법",
+            children: [
+              {
+                text: "자연인(自然人)",
+                link: "/law/민사법/자연인.md",
+              },
+            ],
+          },
+          {
+            text: "판례 연구소",
+            children: [
+              { text: "헌법 재판소", link: "/law/판례/헌재.md" },
+              { text: "민사법", link: "/law/판례/민사법.md" },
+              { text: "형사법", link: "/law/판례/형사법.md" },
+            ],
+          },
+        ],
+      },
+      {
+        text: "Software Engineering",
+        children: [
+          {
+            text: "Back-End",
+            children: [
+              { text: "Auth", link: "/software-engineering/back-end/auth.md" },
+            ],
+          },
+        ],
+      },
+      {
+        text: "articles",
+        children: [
+          {
+            text: "Software Engineering",
+            link: "/articles/software-engineering.md",
           },
         ],
       },

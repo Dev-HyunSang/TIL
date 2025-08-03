@@ -44,7 +44,6 @@
 <ul>
 <li>이 조항은 속지주의(屬地主義)를 명시한 조항으로서, 외국인의 경우 한국에서죄를 지은 경우 한국에서도 범죄행위에 대한 처벌을 받는다.</li>
 </ul>
-<h3 id="" tabindex="-1"><a class="header-anchor" href="#"><span></span></a></h3>
 </div></template>
 
 
