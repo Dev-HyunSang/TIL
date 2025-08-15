@@ -1,3 +1,0 @@
-import comp from "/Users/park.hyunsang/dev/personal/TIL/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"HyunSang's I Learned\",\"lang\":\"en-US\",\"frontmatter\":{\"theme\":\"HOME\"},\"headers\":[],\"git\":{\"updatedTime\":1754036629000,\"contributors\":[{\"name\":\"HyunSang Park\",\"username\":\"\",\"email\":\"me@hyunsang.dev\",\"commits\":1}],\"changelog\":[{\"hash\":\"efd395a28689e0f8e2f9c1eaf23f129e2a092bfa\",\"time\":1754036629000,\"email\":\"me@hyunsang.dev\",\"author\":\"HyunSang Park\",\"message\":\"first commit\"}]},\"filePathRelative\":\"README.md\"}")
-export { comp, data }

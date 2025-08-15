@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/TIL/\",\"lang\":\"en-US\",\"title\":\"HyunSang's Today I Learned\",\"description\":\"Cyber Security, Software Engineering, and Law\",\"head\":[],\"locales\":{}}")

@@ -1,3 +1,0 @@
-import comp from "/Users/park.hyunsang/dev/personal/TIL/docs/.vuepress/.temp/pages/law/판례/헌재.html.vue"
-const data = JSON.parse("{\"path\":\"/law/%ED%8C%90%EB%A1%80/%ED%97%8C%EC%9E%AC.html\",\"title\":\"헌법재판소 판결\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1754036629000,\"contributors\":[{\"name\":\"HyunSang Park\",\"username\":\"\",\"email\":\"me@hyunsang.dev\",\"commits\":1}],\"changelog\":[{\"hash\":\"efd395a28689e0f8e2f9c1eaf23f129e2a092bfa\",\"time\":1754036629000,\"email\":\"me@hyunsang.dev\",\"author\":\"HyunSang Park\",\"message\":\"first commit\"}]},\"filePathRelative\":\"law/판례/헌재.md\"}")
-export { comp, data }
