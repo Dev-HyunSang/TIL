@@ -17,11 +17,24 @@ export default defineUserConfig({
         link: "/law/법학/index.md",
         children: [
           {
+            text: "형사법",
+            children: [
+              {
+                text: "체포",
+                link: "/law/형사법/체포.md",
+              },
+            ],
+          },
+          {
             text: "민사법",
             children: [
               {
                 text: "자연인(自然人)",
                 link: "/law/민사법/자연인.md",
+              },
+              {
+                text: "권리(支配權)",
+                link: "/law/민사법/권리.md",
               },
             ],
           },
@@ -52,6 +65,10 @@ export default defineUserConfig({
           {
             text: "Software Engineering",
             link: "/articles/software-engineering.md",
+          },
+          {
+            text: "Web Hacking",
+            link: "/articles/web-hacking.md",
           },
         ],
       },
