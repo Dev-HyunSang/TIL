@@ -46,6 +46,15 @@ export default defineUserConfig({
               { text: "형사법", link: "/law/판례/형사법.md" },
             ],
           },
+          {
+            text: "논문",
+            link: "/law/논문/index",
+            children: [
+              { text: "법철학", 
+                children: [
+                { text: "법에 있어서의 인간상에 관한 고찰", link: "/law/논문/법철학/법에-있어서의-인간상에-관한-고찰"}
+              ]}
+          ]}
         ],
       },
       {
