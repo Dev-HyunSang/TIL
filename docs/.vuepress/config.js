@@ -54,7 +54,13 @@ export default defineUserConfig({
                 children: [
                 { text: "법에 있어서의 인간상에 관한 고찰", link: "/law/논문/법철학/법에-있어서의-인간상에-관한-고찰"}
               ]}
-          ]}
+          ]}, 
+          {
+            text: '법학전문석사과정',
+            children: [
+              { text: '입학', link: '/law/법학전문석사과정/로스쿨_입학'},
+            ],
+          },
         ],
       },
       {
