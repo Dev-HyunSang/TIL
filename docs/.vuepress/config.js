@@ -47,15 +47,6 @@ export default defineUserConfig({
             ],
           },
           {
-            text: "논문",
-            link: "/law/논문/index",
-            children: [
-              { text: "법철학", 
-                children: [
-                { text: "법에 있어서의 인간상에 관한 고찰", link: "/law/논문/법철학/법에-있어서의-인간상에-관한-고찰"}
-              ]}
-          ]}, 
-          {
             text: '법학전문석사과정',
             children: [
               { text: '입학', link: '/law/법학전문석사과정/로스쿨_입학'},
@@ -63,6 +54,21 @@ export default defineUserConfig({
           },
         ],
       },
+      {
+        text: "논문",
+        link: "/논문/index",
+        children: [
+          {
+                text: "철학",
+                children: [
+                  { text: '행복에 관한 철학적 고찰', link: "/논문/철학/행복론/행복에-관한-철학적-고찰" },
+                ]
+              },
+              { text: "법철학", 
+                children: [
+                { text: "법에 있어서의 인간상에 관한 고찰", link: "/논문/법철학/법에-있어서의-인간상에-관한-고찰"}
+              ]}
+          ]}, 
       {
         text: "Software Engineering",
         children: [
