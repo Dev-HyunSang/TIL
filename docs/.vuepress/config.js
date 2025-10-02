@@ -41,9 +41,15 @@ export default defineUserConfig({
           {
             text: "판례 연구소",
             children: [
-              { text: "헌법 재판소", link: "/law/판례/헌재.md" },
-              { text: "민사법", link: "/law/판례/민사법.md" },
-              { text: "형사법", link: "/law/판례/형사법.md" },
+              { text: "헌법 재판소", link: "/law/판례/헌재" },
+              { text: "민사법", link: "/law/판례/민사법" },
+              { text: "형사법", link: "/law/판례/형사법" },
+            ],
+          },
+          {
+            text: "법령",
+            children: [
+              { text: "전기통신사업법", link: "/law/법령/전기통신사업법" },
             ],
           },
           {
