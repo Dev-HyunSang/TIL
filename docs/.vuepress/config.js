@@ -21,8 +21,12 @@ export default defineUserConfig({
             children: [
               {
                 text: "체포",
-                link: "/law/형사법/체포.md",
+                link: "/law/형사법/체포",
               },
+              {
+                text: "영장",
+                link: "/law/형사법/영장"
+              }
             ],
           },
           {
@@ -30,11 +34,11 @@ export default defineUserConfig({
             children: [
               {
                 text: "자연인(自然人)",
-                link: "/law/민사법/자연인.md",
+                link: "/law/민사법/1_자연인.md",
               },
               {
-                text: "권리(支配權)",
-                link: "/law/민사법/권리.md",
+                text: "행위능력(行爲能力)",
+                link: "/law/민사법/2_행위능력",
               },
             ],
           },
@@ -49,6 +53,7 @@ export default defineUserConfig({
           {
             text: "법령",
             children: [
+              { text: "도로교통법", link: "/law/법령/도로교통법" },
               { text: "전기통신사업법", link: "/law/법령/전기통신사업법" },
             ],
           },
