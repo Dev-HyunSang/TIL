@@ -26,6 +26,10 @@ export default defineUserConfig({
               {
                 text: "영장",
                 link: "/law/형사법/영장"
+              },
+              {
+                text: "약식기소",
+                link: "/law/형사법/약식기소"
               }
             ],
           },
@@ -53,8 +57,33 @@ export default defineUserConfig({
           {
             text: "법령",
             children: [
-              { text: "도로교통법", link: "/law/법령/도로교통법" },
+              {
+                text: "형사법",
+                children: [
+                  { text: "형법", link: "/law/법령/형사법/형법"},
+                  { text: "폭력행위처벌법 (폭처법)", link: "/law/법령/형사법/폭력행위처벌법"},
+                  { text: "특정범죄가중법 (특가법)", link: "/law/법령/형사법/특정범죄가중법"},
+                  { text: "특정경제범죄법 (특경법)", link: "/law/법령/형사법/특경경제범죄법"},
+                  { text: "도로교통법", link: "/law/법령/형사법/도로교통법" },
+                ]
+              },
+              {
+                text: "민사법",
+                children: [
+                  { text: "민법", link: "/law/법령/민사법/민법"},
+                  { text: "채권추심법", link: "/law/법령/민사법/채권추심법"}
+                ]
+              },
+              { 
+                text: "부동산", 
+                children: [
+                  { text: "주택임대차보호법", link: "/law/법령/부동산/주택임대차보호법"},
+                  { text: "부동산거래신고법", link: "/law/법령/부동산/부동산거래신고법"}
+                ]
+              },
+
               { text: "전기통신사업법", link: "/law/법령/전기통신사업법" },
+              
             ],
           },
           {
@@ -101,6 +130,9 @@ export default defineUserConfig({
           {
             text: "Web Hacking",
             link: "/articles/web-hacking.md",
+          },
+          { text: "Android Reverse Engineering", 
+            link: "/articles/android-reverse-engineering.md" 
           },
         ],
       },
