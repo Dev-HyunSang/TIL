@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a}from"./app-BLhFOc9d.js";const c={};function r(n,o){return a(),e("div")}const _=t(c,[["render",r]]),l=JSON.parse('{"path":"/law/%EB%B2%95%EB%A0%B9/%EB%AF%BC%EB%B2%95.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"law/법령/민법.md"}');export{_ as comp,l as data};
