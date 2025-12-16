@@ -17,6 +17,10 @@
 - [[Research & Technique] SSTI & Atlassian Confluence RCE Vulnerability (CVE-2023-22527)](https://blog.naver.com/sk_shieldus/223387962790)
 - [Thymeleaf 환경의 SSTI 공격사례 및 대응 방안: Template fragment와 CVE-2023-38286기반의 SSTI](https://www.igloo.co.kr/security-information/thymeleaf-%ED%99%98%EA%B2%BD%EC%9D%98-ssti-%EA%B3%B5%EA%B2%A9%EC%82%AC%EB%A1%80-%EB%B0%8F-%EB%8C%80%EC%9D%91-%EB%B0%A9%EC%95%88-template-fragment%EC%99%80-cve-2023-38286%EA%B8%B0%EB%B0%98%EC%9D%98-ss/)
 
+## File Inclusion
+
+- [File Inclusion](https://www.hahwul.com/cullinan/attack/file-inclusion/)
+
 ### LFI, Local File Inclusion
 
 - [[취약점] File Inclusion 취약점: LFI (Local File Inclusion)](https://mnzy.tistory.com/128)
@@ -34,6 +38,12 @@
 - [EL inejection in Spring framework](https://gist.github.com/benelog/4582041)
 - [Stefano Di Paola 등의 Expression Language Injection 보고서](https://docs.google.com/document/d/1dc1xxO8UMFaGLOwgkykYdghGWm_2Gn0iCrxFsympqcE/)
 
+### IDOR(Insecure Direct Object References) Attack
+
+- [IDOR Attack](https://www.hahwul.com/cullinan/attack/idor/)
+
+### WAF(Web Application Firewall) ByPass
+
 ## Black box testings
 
 - [Black box testing basics](https://snyk.io/articles/application-security/testing/black-box-testing/)
@@ -41,15 +51,6 @@
 - [What is Black Box Testing? Techniques, Types and Examples](https://www.qatouch.com/blog/black-box-testing/)
 
 ## CVE 관련
-
-## Search Tools
-
-- [Metasploit](https://www.metasploit.com/)
-- [SearchSploit](https://www.exploit-db.com/searchsploit)
-  - [[칼리리눅스 모의 해킹] 13. 취약점 평가 - Searchsploit 활용 컴퓨터 취약점 찾기(nmap 연계)](https://blog.naver.com/snova84/223455117407)
-- [OWASP Depndency-Check](https://owasp.org/www-project-dependency-check/)
-  - `dependency-check.sh --project "MyWebApp" --scan .`
-- [](https://trivy.dev/latest/)
 
 ### in Python
 
@@ -61,6 +62,17 @@
 - [Spring 제품 보안 업데이트 권고(CVE-2024-38816)](https://asec.ahnlab.com/ko/83234/)
   - [NIST - CVE-2024-38816](https://nvd.nist.gov/vuln/detail/cve-2024-38816)
   - [Spring - CVE-2024-38816: Path traversal vulnerability in functional web frameworks](https://spring.io/security/cve-2024-38816)
+
+### in JavaScript/TypeScript(Vue.js or React)
+
+## Search Tools
+
+- [Metasploit](https://www.metasploit.com/)
+- [SearchSploit](https://www.exploit-db.com/searchsploit)
+  - [[칼리리눅스 모의 해킹] 13. 취약점 평가 - Searchsploit 활용 컴퓨터 취약점 찾기(nmap 연계)](https://blog.naver.com/snova84/223455117407)
+- [OWASP Depndency-Check](https://owasp.org/www-project-dependency-check/)
+  - `dependency-check.sh --project "MyWebApp" --scan .`
+- [trivy](https://trivy.dev/latest/)
 
 ## Tools
 

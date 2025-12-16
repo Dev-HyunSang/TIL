@@ -117,7 +117,7 @@ export default defineUserConfig({
           {
             text: "Back-End",
             children: [
-              { text: "Auth", link: "/software-engineering/back-end/auth.md" },
+              { text: "사용자 인증", link: "/software-engineering/back-end/auth.md" },
             ],
           },
           {
