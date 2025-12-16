@@ -44,6 +44,8 @@
 
 ### WAF(Web Application Firewall) ByPass
 
+- [AI 보조 WAF 우회: 공격 자동화 시나리오(심화·공격자 관점)](https://blog.plura.io/ko/tech/ai-waf-bypass/)
+
 ## Black box testings
 
 - [Black box testing basics](https://snyk.io/articles/application-security/testing/black-box-testing/)

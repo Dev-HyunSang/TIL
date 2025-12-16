@@ -113,6 +113,7 @@ export default defineUserConfig({
           ]},
       {
         text: "Software Engineering",
+        collapsible: true,
         children: [
           {
             text: "Back-End",
@@ -130,6 +131,7 @@ export default defineUserConfig({
       },
       {
         text: "Articles",
+        collapsible: true,
         children: [
           {
             text: "Software Engineering",
@@ -160,6 +162,13 @@ export default defineUserConfig({
           }
         ],
       },
+      {
+        text: "개인적인",
+        collapsible: true,
+        children: [
+          { text: "인상 깊은 영상들", link: "/개인적인/인상-깊은-영상들"}
+        ]
+      }
     ],
   }),
 
