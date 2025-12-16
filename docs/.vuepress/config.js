@@ -14,7 +14,7 @@ export default defineUserConfig({
     sidebar: [
       {
         text: "법학",
-        link: "/law/법학/index.md",
+        collapsible: true,
         children: [
           {
             text: "형사법",
@@ -74,8 +74,8 @@ export default defineUserConfig({
                   { text: "채권추심법", link: "/law/법령/민사법/채권추심법"}
                 ]
               },
-              { 
-                text: "부동산", 
+              {
+                text: "부동산",
                 children: [
                   { text: "주택임대차보호법", link: "/law/법령/부동산/주택임대차보호법"},
                   { text: "부동산거래신고법", link: "/law/법령/부동산/부동산거래신고법"}
@@ -83,7 +83,7 @@ export default defineUserConfig({
               },
 
               { text: "전기통신사업법", link: "/law/법령/전기통신사업법" },
-              
+
             ],
           },
           {
@@ -97,18 +97,20 @@ export default defineUserConfig({
       {
         text: "논문",
         link: "/논문/index",
+        collapsible: true,
         children: [
           {
                 text: "철학",
                 children: [
                   { text: '행복에 관한 철학적 고찰', link: "/논문/철학/행복론/행복에-관한-철학적-고찰" },
+                  { text: '우리는 사랑을 어떻게 경험하고 의미화 하는가?', link: '/논문/철학/사랑/우리는-사랑을-어떻게-경험하고-의미화-하는가'}
                 ]
               },
-              { text: "법철학", 
+              { text: "법철학",
                 children: [
                 { text: "법에 있어서의 인간상에 관한 고찰", link: "/논문/법철학/법에-있어서의-인간상에-관한-고찰"}
               ]}
-          ]}, 
+          ]},
       {
         text: "Software Engineering",
         children: [
@@ -118,22 +120,44 @@ export default defineUserConfig({
               { text: "Auth", link: "/software-engineering/back-end/auth.md" },
             ],
           },
+          {
+            text: "개인적인",
+            children: [
+              { text: "맥북 개발환경 설정", link: "/software-engineering/personal/macbook-setup.md" },
+            ],
+          }
         ],
       },
       {
-        text: "articles",
+        text: "Articles",
         children: [
           {
             text: "Software Engineering",
             link: "/articles/software-engineering.md",
           },
           {
+            text: "NestJS",
+            link: "/articles/nestjs"
+          },
+          {
+            text: "사이버 보안",
+            link: "/articles/cyber-security"
+          },
+          {
+            text: "개인정보보호",
+            link: "/articles/personal-information-protection"
+          },
+          {
             text: "Web Hacking",
             link: "/articles/web-hacking.md",
           },
-          { text: "Android Reverse Engineering", 
-            link: "/articles/android-reverse-engineering.md" 
+          { text: "Android Reverse Engineering",
+            link: "/articles/android-reverse-engineering.md"
           },
+          {
+            text: "OSINT",
+            link: "/articles/OSINT.md",
+          }
         ],
       },
     ],

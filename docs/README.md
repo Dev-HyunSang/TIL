@@ -14,14 +14,12 @@ theme: HOME
    - 법철학
    - LEET(법학적성시험)
 
-최근에는 법학을 더 많이 공부하고 있지만 항상 컴퓨터 공학에도 관심이 많습니다 :-)  
-죽어야지만 끝나는 공부를 하고 있습니다...ㅠ
-
 ---
 
 > **나를 죽이지 못하는 고통은 나를 더 강하게 만든다.**  
 > **Was mich nicht umbringt, macht mich stärker**  
 > 프리드리히 니체, 《우상의 황혼》 중
 
-> **의심스러우면 피고인의 이익으로**  
-> **in dubio pro reo**  
+> ***춤추는 별을 낳기 위해선 내면에 혼돈을 지녀야 한다.***  
+> ***Man muss noch Chaos in sich haben, um einen tanzenden Stern gebären zu können.***  
+>  프리드리히 니체, 《차라투스트라는 이렇게 말했다》

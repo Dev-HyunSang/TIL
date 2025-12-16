@@ -19,6 +19,7 @@
     "vuepress": "2.0.0-rc.20"
   },
   "dependencies": {
+    "esbuild": "^0.27.1",
     "gh-pages": "^6.3.0"
   }
 }

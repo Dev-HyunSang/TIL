@@ -1,5 +1,9 @@
-# Auth
+# 사용자 인증 방법
+
+## JWT(JSON Web Token)
 
 ## Session
 
-## JWT
+## OAuth2
+
+## Passkey
