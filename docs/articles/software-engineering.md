@@ -12,14 +12,23 @@
 
 ## AI
 
-### + Coding
-
+### Claude
 - [Claude Code 사용 가이드](https://tech.hyperithm.com/claude_code_guides)
 - [Claude Code 성능 극대화를 위한 베스트 프랙티스](https://bcho.tistory.com/1492)
 - [claude-squad](https://github.com/smtg-ai/claude-squad)
+
+### Antigravity
+
 
 ### MCP
 
 - [sequential-thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
 - []
     - [Brave Search API Keys](https://api-dashboard.search.brave.com/app/keys)
+
+### Tools(CLI, Skills, ETC)
+
+- [Notion Skills for Claude](https://github.com/team-attention/notion-skills-for-claude/)
+    - > Official Notion Skills created by Notion for Claude. These skills teach Claude how to complete real workflows in Notion.
+- [Agent Council](https://github.com/team-attention/agent-council)
+    - > A skill that gathers opinions from multiple AI CLIs (Codex, Gemini, ...) and lets a configurable Chairman synthesize a conclusion. Inspired by Karpathy's LLM Council

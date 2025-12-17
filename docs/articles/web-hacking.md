@@ -66,6 +66,8 @@
   - [Spring - CVE-2024-38816: Path traversal vulnerability in functional web frameworks](https://spring.io/security/cve-2024-38816)
 
 ### in JavaScript/TypeScript(Vue.js or React)
+- [CVE-2025-55182](https://nvd.nist.gov/vuln/detail/CVE-2025-55182)
+  - [CVE-2025-55182 보안 취약점, 당신의 React와 Next.js 프로젝트를 직접 겨냥합니다.](https://cloud.google.com/blog/ko/products/identity-security/responding-to-cve-2025-55182/?e=48754805&hl=ko)
 
 ## Search Tools
 

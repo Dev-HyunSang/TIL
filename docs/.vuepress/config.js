@@ -147,7 +147,7 @@ export default defineUserConfig({
           },
           {
             text: "개인정보보호",
-            link: "/articles/personal-information-protection"
+            link: "/articles/개인정보보호"
           },
           {
             text: "Web Hacking",
