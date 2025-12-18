@@ -138,6 +138,10 @@ export default defineUserConfig({
             link: "/articles/software-engineering.md",
           },
           {
+            text: "백엔드 개발",
+            link: "/articles/백엔드-개발"
+          },
+          {
             text: "NestJS",
             link: "/articles/nestjs"
           },
@@ -166,7 +170,8 @@ export default defineUserConfig({
         text: "개인적인",
         collapsible: true,
         children: [
-          { text: "인상 깊은 영상들", link: "/개인적인/인상-깊은-영상들"}
+          { text: "인상 깊은 영상들", link: "/개인적인/인상-깊은"},
+          { text: "커리어", link: "/개인적인/커리어"}
         ]
       }
     ],

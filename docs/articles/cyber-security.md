@@ -8,6 +8,15 @@
 
 - [Gartner 하이프 사이클로 본 SIEM과 SOAR – 왜 둘 다 한계가 있는가?](https://blog.plura.io/ko/column/hypecycle_siem_soar/)
 
+## 키 관리
+
+- [API 키 관리와 보안: 효율적인 접근법](https://f-lab.kr/insight/api-key-management-security-20250311)
+- [시크릿 키 베스트 프랙티스](https://docs.tosspayments.com/blog/secret-key-best-practice)
+- [아마존 웹 서비스 IAM 사용자의 액세스 키 발급 및 관리](https://www.44bits.io/ko/post/publishing_and_managing_aws_user_access_key)
+- [IAM의 보안 모범 사례](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/best-practices.html)
+- [[리인벤트2021] 서버리스 시큐리티의 베스트 프랙티스 #SVS301 #reinvent](https://medium.com/classmethodkorea/%EB%A6%AC%EC%9D%B8%EB%B2%A4%ED%8A%B82021-%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0%EC%9D%98-%EB%B2%A0%EC%8A%A4%ED%8A%B8-%ED%94%84%EB%9E%99%ED%8B%B0%EC%8A%A4-svs301-reinvent-2fa769992f34)
+    - [(원문) [レポート] サーバーレスセキュリティのベストプラクティス #SVS301 #reinvent](https://dev.classmethod.jp/articles/reinvent-2021-report-svs301/)
+
 ## 침해사고 보고서 및 침해사고 가설
 
 - [쿠팡 해킹 가설: 서버 인증 취약점과 내부자, 3,370만 계정 정보는 어떻게 빠져나갔나?](https://blog.plura.io/ko/column/coupang-auth-breach-hypothesis/)
