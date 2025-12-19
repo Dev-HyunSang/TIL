@@ -4,7 +4,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
   lang: "en-US",
-  base: "til.hyunsang.dev/",
+  base: "/",
   title: "HyunSang's Today I Learned",
   description: "Cyber Security, Software Engineering, and Law",
 
