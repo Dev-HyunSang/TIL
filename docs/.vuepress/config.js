@@ -153,7 +153,8 @@ export default defineUserConfig({
         collapsible: true,
         children: [
           { text: "인상 깊은 영상들", link: "/개인적인/인상-깊은" },
-          { text: "커리어", link: "/개인적인/커리어" }
+          { text: "커리어", link: "/개인적인/커리어" },
+          { text: "도서관", link: "/개인적인/도서관" }
         ]
       }
     ],
