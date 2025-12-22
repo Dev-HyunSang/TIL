@@ -103,6 +103,13 @@ export default defineUserConfig({
             ],
           },
           {
+            text: "Nest",
+            children: [
+              { text: 'Nes 설치하기', link: '/software-engineering/nest/installation'},
+              { text: 'Nest 기본 구조', link: '/software-engineering/nest/basic-structure'}
+            ]
+          },
+          {
             text: "개인적인",
             children: [
               { text: "맥북 개발환경 설정", link: "/software-engineering/personal/macbook-setup.md" },

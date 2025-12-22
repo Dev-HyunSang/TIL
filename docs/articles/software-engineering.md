@@ -4,6 +4,12 @@
 
 - [Git) Skip Worktree 사용 방법 정리](https://drehzr.tistory.com/1751)
 
+## Code
+
+- [instance란?](https://velog.io/@k7nsuy/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%9E%8)
+- [싱글톤 패턴(Singleton Pattern) 처음부터 끝까지](https://skianything.tistory.com/24)
+- [[Java] 애노테이션(annotation)](https://codingwell.tistory.com/79)
+
 ## DataBase
 
 ### AWS DDB

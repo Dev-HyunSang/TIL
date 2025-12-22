@@ -8,7 +8,9 @@ theme: HOME
 
 1. 소프트웨어 공학
    - 백엔드 개발
+      - Golang(fiber), TypeScript(Nest)
    - 프론트엔드 개발
+      - TypeScript(Vue, React)
 2. 사이버 보안
    - 웹 해킹
    - 성문법과 정책, 제도를 통한 개인정보보호

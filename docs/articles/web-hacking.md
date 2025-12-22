@@ -52,6 +52,8 @@
 - [Black Box Testing](https://www.imperva.com/learn/application-security/black-box-testing/)
 - [What is Black Box Testing? Techniques, Types and Examples](https://www.qatouch.com/blog/black-box-testing/)
 
+### BAC(Broken Access Control)
+
 ## CVE 관련
 
 ### in Python

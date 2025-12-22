@@ -1,4 +1,4 @@
-# Nest.js 설치하기
+# Nest 설치하기
 
 ```shell
 npm install -g @nestjs/cli
