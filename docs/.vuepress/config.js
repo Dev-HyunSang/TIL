@@ -42,6 +42,10 @@ export default defineUserConfig({
                   {
                     text: "임대차계약",
                     link: "/law/민사법/부동산/임대차계약"
+                  },
+                  {
+                    text: "무단경작",
+                    link: "/law/민사법/부동산/무단경작"
                   }
                 ]
               },
