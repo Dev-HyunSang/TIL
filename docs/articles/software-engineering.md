@@ -4,20 +4,19 @@
 
 - [Git) Skip Worktree 사용 방법 정리](https://drehzr.tistory.com/1751)
 
-## Code
+## 코드
 
 - [instance란?](https://velog.io/@k7nsuy/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%9E%8)
 - [싱글톤 패턴(Singleton Pattern) 처음부터 끝까지](https://skianything.tistory.com/24)
 - [[Java] 애노테이션(annotation)](https://codingwell.tistory.com/79)
 
-## DataBase
+## 데이터
 
-## Data
-
-### Log
+### 로그
 
 - [[Data] 로그(Log) 데이터의 개념과 활용, 사례 및 수집 알아보기](https://spidyweb.tistory.com/484)
 - [로그 수집 및 분석 시스템은 어떻게 설계하나요?](https://velog.io/@ouk/%EB%A1%9C%EA%B7%B8-%EC%88%98%EC%A7%91-%EB%B0%8F-%EB%B6%84%EC%84%9D-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%84%A4%EA%B3%84%ED%95%98%EB%82%98%EC%9A%94)
+- [유저의 액션 이벤트 로그 설계와 개선 과정](https://hajinnote.tistory.com/136)
 
 ### AWS DDB
 
@@ -45,3 +44,8 @@
     - > Official Notion Skills created by Notion for Claude. These skills teach Claude how to complete real workflows in Notion.
 - [Agent Council](https://github.com/team-attention/agent-council)
     - > A skill that gathers opinions from multiple AI CLIs (Codex, Gemini, ...) and lets a configurable Chairman synthesize a conclusion. Inspired by Karpathy's LLM Council
+
+## 회고 / 경험
+
+- [Publishing your work increases your luck](https://github.com/readme/guides/publishing-your-work)
+    - [작업을 공개하면 행운이 따른다](https://news.hada.io/topic?id=25406)
