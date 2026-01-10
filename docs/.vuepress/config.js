@@ -140,7 +140,7 @@ export default defineUserConfig({
           {
             text: "Claude",
             link: "/articles/claude"
-          }
+          },
           {
             text: "사이버 보안",
             link: "/articles/cyber-security"
