@@ -26,3 +26,7 @@
 - [How we pwned X (Twitter), Vercel, Cursor, Discord, and hundreds of companies through a supply-chain attack](https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28)
     - [how to hack discord, vercel and more with one easy trick](https://kibty.town/blog/mintlify/)
     - [Redacted by Counsel : A supply chain postmortem](https://heartbreak.ing/)
+
+## 동향/전망
+
+- [[강은성 보안칼럼] 글로벌 사이버 위협, 2025년 회고와 2026년 전망](https://zdnet.co.kr/view/?no=20260103154708)

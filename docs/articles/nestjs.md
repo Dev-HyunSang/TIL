@@ -16,3 +16,10 @@
 ## Logger
 
 - [[NestJS] Logger](https://velog.io/@haron/NestJS-Logger-d3wsy797)
+
+## Kafka
+
+## DTO
+
+- [NestJS ResponseDto 적극 활용하기](https://threeyears.tistory.com/553)
+- [NestJS에서 응답/요청 객체 직렬화 (Serialization) 하기](https://jojoldu.tistory.com/610)

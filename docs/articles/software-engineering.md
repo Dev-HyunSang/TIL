@@ -1,4 +1,9 @@
-# Software Enginnering Articels
+# 소프트웨어 엔지니어링
+
+## 테크니컬 라이팅
+
+- [[글쓰기 코칭] #1 - 테크니컬 라이팅 : 개념 및 프로세스](https://osckorea.tistory.com/172)
+- [토스 - 테크니컬 라이팅 가이드](https://technical-writing.dev/)
 
 ## Git
 
@@ -22,28 +27,15 @@
 
 - [Dynamic했던 DynamoDB 비용효율화](https://techblog.lotteon.com/%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8-dynamodb-%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0-a44b6e3c3392)
 
-## AI
+## Cloudflare
 
-### Claude
-- [Claude Code 사용 가이드](https://tech.hyperithm.com/claude_code_guides)
-- [Claude Code 성능 극대화를 위한 베스트 프랙티스](https://bcho.tistory.com/1492)
-- [claude-squad](https://github.com/smtg-ai/claude-squad)
+### 설정 
 
-### Antigravity
+- [1인 개발자를 위한 Cloudflare 설정 방법 (Vercel 사용자 필독)](https://www.integer.blog/cloudflare-setup/)
 
+### CDN / Cache
 
-### MCP
-
-- [sequential-thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
-- []
-    - [Brave Search API Keys](https://api-dashboard.search.brave.com/app/keys)
-
-### Tools(CLI, Skills, ETC)
-
-- [Notion Skills for Claude](https://github.com/team-attention/notion-skills-for-claude/)
-    - > Official Notion Skills created by Notion for Claude. These skills teach Claude how to complete real workflows in Notion.
-- [Agent Council](https://github.com/team-attention/agent-council)
-    - > A skill that gathers opinions from multiple AI CLIs (Codex, Gemini, ...) and lets a configurable Chairman synthesize a conclusion. Inspired by Karpathy's LLM Council
+- [Cloudflare CDN 구성해보기](https://blog.cocoblue.me/lets-configure-cloudflare-cdn/)
 
 ## 회고 / 경험
 

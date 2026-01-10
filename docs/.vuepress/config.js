@@ -138,6 +138,10 @@ export default defineUserConfig({
             link: "/articles/nestjs"
           },
           {
+            text: "Claude",
+            link: "/articles/claude"
+          }
+          {
             text: "사이버 보안",
             link: "/articles/cyber-security"
           },
