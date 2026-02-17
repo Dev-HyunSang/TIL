@@ -50,6 +50,10 @@ export default defineUserConfig({
                 ]
               },
               {
+                text: "오답노트",
+                link: "/law/민사법/오답노트"
+              },
+              {
                 text: "자연인(自然人)",
                 link: "/law/민사법/1_자연인.md",
               },
@@ -138,6 +142,10 @@ export default defineUserConfig({
             link: "/articles/nestjs"
           },
           {
+            text: "Flutter",
+            link: "/articles/flutter.md",
+          },
+          {
             text: "Claude",
             link: "/articles/claude"
           },
@@ -160,7 +168,7 @@ export default defineUserConfig({
           {
             text: "OSINT",
             link: "/articles/OSINT.md",
-          }
+          },
         ],
       },
       {
