@@ -150,6 +150,10 @@ export default defineUserConfig({
             link: "/articles/claude"
           },
           {
+            text: "AI",
+            link: "/articles/ai"
+          },
+          {
             text: "사이버 보안",
             link: "/articles/cyber-security"
           },
