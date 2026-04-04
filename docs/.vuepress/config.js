@@ -181,7 +181,15 @@ export default defineUserConfig({
         children: [
           { text: "인상 깊은 영상들", link: "/개인적인/인상-깊은" },
           { text: "커리어", link: "/개인적인/커리어" },
-          { text: "도서관", link: "/개인적인/도서관" }
+          { text: "도서관", link: "/개인적인/도서관" },
+          { text: "경제 공부", 
+            children:[
+              { text: "환율", children: [
+                { text: "원화와 달러", link: "/개인적인/경제-공부/환율/원화-달러" }
+              ]},
+              { text: "인상 깊은 영상과 아티클 모음", link: "/개인적인/경제-공부/영상-아티클-모음" }
+            ]
+        }
         ]
       }
     ],
