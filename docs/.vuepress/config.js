@@ -13,6 +13,26 @@ export default defineUserConfig({
     navbar: [],
     sidebar: [
       {
+        text: "SCHU",
+        children: [
+          {
+            text: "26-1",
+            children: [
+              {
+                text: "민사집행법",
+                link: "/schu/26-1/민사집행법/index",
+                children: [
+                  {
+                    text: "01강",
+                    link: "/schu/26-1/민사집행법/01강"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         text: "법학",
         collapsible: true,
         children: [
