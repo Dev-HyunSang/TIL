@@ -1,0 +1,38 @@
+# Claude Code Setup
+
+## 1. Installation
+
+### Claude Code
+
+```bash
+brew install claude-code
+```
+
+### Plugin - `oh-my-claudecode`
+
+```bash
+/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode
+/plugin install oh-my-claudecode
+/oh-my-claudecode:setup
+```
+
+### Plugin - `claude-obsidian`
+
+```bash
+git clone https://github.com/AgriciDaniel/claude-obsidian
+cd claude-obsidian
+bash bin/setup-vault.sh
+```
+
+```bash
+# Step 1: add the marketplace
+claude plugin marketplace add AgriciDaniel/claude-obsidian
+
+# Step 2: install the plugin
+claude plugin install claude-obsidian@claude-obsidian-marketplace
+
+claude plugin list
+```
+
+### Plugin - `obsidian-claude-code-mcp`
+
