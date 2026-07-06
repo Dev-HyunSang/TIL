@@ -1,0 +1,13 @@
+diff --git a/node_modules/starlight-site-graph/config/index.ts b/node_modules/starlight-site-graph/config/index.ts
+index 8a38bbf..922ad06 100644
+--- a/node_modules/starlight-site-graph/config/index.ts
++++ b/node_modules/starlight-site-graph/config/index.ts
+@@ -2,7 +2,7 @@ import { AstroError } from 'astro/errors';
+ import { type StarlightSiteGraphConfig, starlightSiteGraphConfig, starlightSiteGraphConfigSchema } from './base';
+ 
+ function isObject(item: any): boolean {
+-	return (item && typeof item === 'object' && !Array.isArray(item));
++	return (item && typeof item === 'object' && !Array.isArray(item) && !(item instanceof Map));
+ }
+ 
+ /**

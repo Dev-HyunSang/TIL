@@ -1,0 +1,15 @@
+# GitHub Action Self Runner 등록
+
+```bash
+error getting credentials - err: exit status 1, out: `keychain cannot be accessed because the current session does not allow user interaction. The keychain may be locked; unlock it by running "security -v unlock-keychain ~/Library/Keychains/login.keychain-db" and try again`
+```
+
+```bash
+error saving credentials: error storing credentials - err: exit status 1, out: `User interaction is not allowed. (-25308)`
+```
+
+```bash
+sudo rm /usr/local/bin/docker-credential-osxkeychain
+sudo vi ~/.docker/config.json
+# "credsStore": "" 으로 수정
+```
