@@ -9,6 +9,10 @@
 - [oh-my-claudecode (OMC) 완전 가이드](https://duhui99.tistory.com/70)
 - [클로드코드를 좀 더 잘쓰는 방법에 대해서 제 나름의 방식을 공유하고싶습니다.](https://news.hada.io/topic?id=27614)
 
+### 모델 비교
+
+- [클로드 Fable 5 vs Opus 4.8, 벤치마크 비교— 발표 표의 80.3%는 Fable 5 점수가 아닐 수도 있다](https://www.gpters.org/news/post/claude-fable-5-vs-P6gbzYLJ0V0Jcgq)
+
 ### Obsidian + Claude Code
 
 - [Claude Code로 Obsidian 개인 메모 자동화 실험기](https://www.gpters.org/llm-service/post/claude-code-obsidian-private-7Q0tBGQ5kg3hCs2)
@@ -45,6 +49,10 @@
     - [Shopify 창업자가 직접 만든 로컬 검색 엔진, QMD](https://wikidocs.net/blog/@jaehong/13046/)
     - [QMD(Query Markup Documents): 로컬 환경을 위한 의미 기반의 작고 가벼운 지식 검색 엔진](https://discuss.pytorch.kr/t/qmd-query-markup-documents/9158)
 
+- grill-with-docs
+    - [[grill-with-docs 번역] grill-with-docs: Align Before You Build](https://rudaks.tistory.com/entry/grill-with-docs-%EB%B2%88%EC%97%AD-grill-with-docs-Align-Before-You-Build)
+
 ### MCP
 
 - [sequential-thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
+    - > An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
