@@ -5,7 +5,7 @@ import { docsSchema } from "@astrojs/starlight/schema";
 
 // 기존 docs/ 문서를 그대로 사용. frontmatter title이 없으면
 // 본문 첫 `# 제목` 또는 파일명을 title로 주입한다.
-const base = glob({ base: "./src/content/docs", pattern: "**/*.md" });
+const base = glob({ base: "./src/content/docs", pattern: "**/*.{md,mdx}"});
 
 export const collections = {
   docs: defineCollection({
