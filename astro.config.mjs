@@ -4,6 +4,7 @@ import { defineConfig } from "astro/config";
 import starlightThemeObsidian from "starlight-theme-obsidian";
 
 export default defineConfig({
+  site: "https://til.hyunsang.dev",
   markdown: {},
   integrations: [
     starlight({
@@ -12,6 +13,7 @@ export default defineConfig({
       // 배열 순서 = 사이드바 순서. label = 표시될 그룹 이름.
       // 펼쳐둘 그룹만 collapsed: false.
       sidebar: [
+        { label: "Daily Log", collapsed: false, items: [{ autogenerate: { directory: "daily-log" } }] },
         { label: "Software Engineering", collapsed: true, items: [{ autogenerate: { directory: "software-engineering" } }]},
         { label: "Cyber Security", collapsed: true, items: [{ autogenerate: { directory: "cyber-security"  } }] },
         { label: "Law", collapsed: true, items: [{ autogenerate: { directory: "law" } }] },
