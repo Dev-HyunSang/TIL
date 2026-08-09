@@ -15,6 +15,7 @@ export default defineConfig({
       sidebar: [
         { label: "Daily Log", collapsed: false, items: [{ autogenerate: { directory: "daily-log" } }] },
         { label: "Software Engineering", collapsed: true, items: [{ autogenerate: { directory: "software-engineering" } }]},
+        { label: "Network", collapsed: true, items: [{ autogenerate: { directory: "network" } }] },
         { label: "Cyber Security", collapsed: true, items: [{ autogenerate: { directory: "cyber-security"  } }] },
         { label: "Law", collapsed: true, items: [{ autogenerate: { directory: "law" } }] },
         { label: "Articles", collapsed: true, items: [{ autogenerate: { directory: "articles" } }] },
