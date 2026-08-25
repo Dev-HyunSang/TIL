@@ -1,6 +1,26 @@
-# Claude
+---
+title: "AI Agent"
+---
 
-## 읽으면 좋은 글들 
+## Effective AI Agents
+
+### Context Engineering
+
+- [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+
+### AI Agentic Workflow
+
+- [Agentic AI 이후의 패러다임: Agentic Workflow](https://www.samsungsds.com/kr/insights/agentic-workflow-a-new-paradigm-after-agentic-ai.html)
+
+### Tokens
+
+- [Agentic AI: How to Save on Tokens](https://medium.com/data-science-collective/agentic-ai-how-to-save-on-tokens-9a1571ac6c85)
+- [Working with LLMs](https://aicourse.nlp.town/)
+    - [Tokens, Tools and Agents](https://aicourse.nlp.town/docs/tokens-tools-agents/)
+
+## Claude
+
+### 읽으면 좋은 글들 
 
 - [Claude Code 사용 가이드](https://tech.hyperithm.com/claude_code_guides)
 - [Claude Code 성능 극대화를 위한 베스트 프랙티스](https://bcho.tistory.com/1492)
@@ -9,23 +29,31 @@
 - [oh-my-claudecode (OMC) 완전 가이드](https://duhui99.tistory.com/70)
 - [클로드코드를 좀 더 잘쓰는 방법에 대해서 제 나름의 방식을 공유하고싶습니다.](https://news.hada.io/topic?id=27614)
 - [에이전트 코딩은 함정이다 (Agentic Coding is a Trap)](https://flowkater.io/nuggets/2026-05-11-agentic-coding-trap/)
+- [AI 코딩 에이전트도 Policy as Code가 필요하다: managed-settings.json으로 권한·플러그인·모델 통제하기]()
+    - > 조직 내 AI 코딩 에이전트 도입 시 개발자마다 흩어진 환경을 하나의 'Policy as Code'로 제어하지 않으면, 보안과 생산성 사이의 균형은 무너질 수밖에 없습니다.
 
-### 모델 비교
+### Token
+
+- [[Claude]번외_code 비용 절감하기](https://yangphago.oopy.io/34d62b09-b72b-80ff-9dd5-ec5435c7652d)
+- [Claude Code 비용 80% 절감하는 settings.json 3줄과 14만명이 쓰는 everything-claude-code 설정법](https://youtu.be/4rN-UWKSmp0?si=hB3wXGcfwQKNmmlI)
+
+
+#### 모델 비교
 
 - [클로드 Fable 5 vs Opus 4.8, 벤치마크 비교— 발표 표의 80.3%는 Fable 5 점수가 아닐 수도 있다](https://www.gpters.org/news/post/claude-fable-5-vs-P6gbzYLJ0V0Jcgq)
 
-### Obsidian + Claude Code
+#### Obsidian + Claude Code
 
 - [Claude Code로 Obsidian 개인 메모 자동화 실험기](https://www.gpters.org/llm-service/post/claude-code-obsidian-private-7Q0tBGQ5kg3hCs2)
 - [Claude Code와 Obsidian MCP 연동 가이드](https://tech.e3view.com/claude-codewa-obsidian-mcp-yeondong-gaideu/)
 - [I Turned Obsidian Into a Self-Organizing AI Brain - Here's the Open-Source Plugin](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain)
 
-## 공식문서
+### 공식문서
 
 - [Create custom subagents](https://code.claude.com/docs/en/sub-agents)
 - [Create plugins](https://code.claude.com/docs/en/plugins)
 
-## Skills / Plugins / IDE
+### Skills / Plugins / IDE
 
 - [Notion Skills for Claude](https://github.com/team-attention/notion-skills-for-claude/)
     - > Official Notion Skills created by Notion for Claude. These skills teach Claude how to complete real workflows in Notion.
@@ -50,14 +78,21 @@
     - [Shopify 창업자가 직접 만든 로컬 검색 엔진, QMD](https://wikidocs.net/blog/@jaehong/13046/)
     - [QMD(Query Markup Documents): 로컬 환경을 위한 의미 기반의 작고 가벼운 지식 검색 엔진](https://discuss.pytorch.kr/t/qmd-query-markup-documents/9158)
 
-- grill-with-docs
+- [grill-with-docs](https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs)
     - [[grill-with-docs 번역] grill-with-docs: Align Before You Build](https://rudaks.tistory.com/entry/grill-with-docs-%EB%B2%88%EC%97%AD-grill-with-docs-Align-Before-You-Build)
+    - [grill-with-docs: Align Before You Build](https://www.aihero.dev/grill-with-docs)
+
+- [rtk](https://github.com/rtk-ai/rtk)
+    - > CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies
 
 - [orca](https://www.onorca.dev/)
     - > Ship 100x With The Agent IDE / Run Claude Code, Codex, OpenCode, and more side by side in isolated worktrees.
 Ghostty-inspired terminals, a built-in file editor, and git tracking keep every branch moving.
 
-### MCP
+- [ECC](https://github.com/affaan-m/ECC)
+    - > The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+
+#### MCP
 
 - [sequential-thinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)
     - > An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.
