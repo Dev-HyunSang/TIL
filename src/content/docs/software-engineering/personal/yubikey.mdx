@@ -1,0 +1,17 @@
+---
+title: "YubiKey 설정"
+---
+
+## macOS login
+
+- [Smart card (Yubikey)로 Mac에 로그인 하기](https://svrforum.com/software/1020015)
+- [macOS Smart Card Only Authentication](https://svrforum.com/software/1089475)
+
+### Yubikey를 이용한 macOS 로그인
+
+```bash
+sudo defaults write /Library/Preferences/com.apple.security.smartcard enforceSmartCard -bool true
+```
+
+- SmartCard를 이용해서 유비키만으로 로그인 가능
+    - `true` / `false`를 이용해서 설정 변경 가능
