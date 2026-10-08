@@ -14,8 +14,8 @@
     "patch-package": "^8.0.1"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.40.0",
-    "astro": "^6.4.5",
+    "@astrojs/starlight": "^0.42.5",
+    "astro": "^7.3.7",
     "esbuild": "^0.27.1",
     "starlight-theme-obsidian": "^0.4.1"
   }
