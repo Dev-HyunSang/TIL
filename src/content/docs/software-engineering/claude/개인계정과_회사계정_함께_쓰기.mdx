@@ -1,0 +1,14 @@
+---
+title: "개인 계정과 회사 계정(Team Plan) 함께 쓰기"
+---
+
+- `CLAUDE_CONFIG_DIR`를 골라 쓰는 방법이 가장 깔끔함.
+- `/logout`, `/login` 명령어를 하지 않아도 되고, 두 계정을 터미널 두 개에서 동시에 켜둘 수도 있음.
+
+```bash
+alias claude-me='CLAUDE_CONFIG_DIR=~/.claude claude'
+alias claude-work='CLAUDE_CONFIG_DIR=~/.claude-work claude'
+
+source ~/.zshrc
+claude-work
+```
