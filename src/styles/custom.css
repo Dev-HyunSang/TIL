@@ -1,0 +1,6 @@
+/* Center markdown tables. Starlight renders them as display:block, so shrink to content width first. */
+.sl-markdown-content table:not(:where(.not-content *)) {
+	width: fit-content;
+	max-width: 100%;
+	margin-inline: auto;
+}

@@ -1,0 +1,146 @@
+---
+import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
+import MobileMenuToggle from '@astrojs/starlight/components/MobileMenuToggle.astro';
+import SiteTitle from '@astrojs/starlight/components/SiteTitle.astro';
+
+const { hasSidebar } = Astro.locals.starlightRoute;
+---
+
+{/* Local override of starlight-theme-obsidian@0.4.1 PageFrame: Starlight 0.42+ opens the mobile
+    menu via the Popover API (popovertarget="starlight__sidebar"), but the theme's pane is a plain div
+    toggled by the removed [aria-expanded] state, so the menu button did nothing. Pane is now a popover.
+    ponytail: delete this file once the theme ships a popover-based PageFrame. */}
+{/* (STARLIGHT-THEME-OBSIDIAN): Do not show header component if page has no sidebar, create a separate mobile-header component */}
+<div class="page sl-flex">
+    {
+        hasSidebar ? (
+            <nav class="sidebar" aria-label={Astro.locals.t('sidebarNav.accessibleLabel')}>
+                <script>
+                    // Same as Starlight's PageFrame: popover only on mobile; trap focus while open.
+                    // The theme keeps the menu button inside .main-frame, so inert everything there except the header.
+                    class StarlightSidebarPane extends HTMLElement {
+                        constructor() {
+                            super();
+                            const desktopMediaQuery = matchMedia('(min-width: 50em)');
+                            const resetPopoverAttribute = () => {
+                                this.popover = desktopMediaQuery.matches ? null : 'auto';
+                            };
+                            resetPopoverAttribute();
+                            desktopMediaQuery.addEventListener('change', resetPopoverAttribute);
+                            this.addEventListener('toggle', ({ newState }) => {
+                                document
+                                    .querySelectorAll<HTMLElement>('.main-frame > :not(.mobile-header), .sl-skip-link')
+                                    .forEach((el) => el.toggleAttribute('inert', newState === 'open'));
+                            });
+                        }
+                    }
+                    customElements.define('sl-sidebar-pane', StarlightSidebarPane);
+                </script>
+                <sl-sidebar-pane popover="" id="starlight__sidebar" class="sidebar-pane">
+                    <div class="sidebar-content sl-flex">
+                        <slot name="sidebar" />
+                    </div>
+                </sl-sidebar-pane>
+            </nav>
+        ) : (<header class="header"><slot name="header" /></header>)
+    }
+    <div class="main-frame">
+        {hasSidebar && (
+            <div class="mobile-header">
+                <div class="title-wrapper ">
+                    <SiteTitle/>
+                </div>
+                <MobileTableOfContents/>
+                <MobileMenuToggle/>
+            </div>
+        )}
+        <slot />
+    </div>
+</div>
+
+<style>
+	@layer starlight.core {
+		.page {
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		.header {
+			z-index: var(--sl-z-index-navbar);
+			position: fixed;
+			inset-inline-start: 0;
+			inset-block-start: 0;
+			width: 100%;
+			height: var(--sl-nav-height);
+			border-bottom: 1px solid var(--sl-color-hairline-shade);
+			padding: var(--sl-nav-pad-y) var(--sl-nav-pad-x);
+			padding-inline-end: var(--sl-nav-pad-x);
+			background-color: var(--sl-color-bg-nav);
+		}
+
+		:global([data-has-sidebar]) .header {
+			padding-inline-end: calc(
+				var(--sl-nav-gap) + var(--sl-nav-pad-x) + var(--sl-menu-button-size)
+			);
+		}
+
+		.sidebar-pane {
+			/* Reset UA popover styles. */
+			border: unset;
+			padding: unset;
+			margin: unset;
+			height: unset;
+			color: unset;
+
+			position: fixed;
+			z-index: var(--sl-z-index-menu);
+			inset-block: var(--sl-nav-height) 0;
+			inset-inline-start: 0;
+			width: 100%;
+			background-color: var(--sl-color-black);
+			overflow-y: auto;
+		}
+
+		/* Starlight swaps the menu icon via `button:has(~ :popover-open)`, which needs the button to be
+		   a sibling of the pane; here it is not, so key off the body instead. */
+		:global(body:has(#starlight__sidebar:popover-open) .sl-menu-button .open-menu),
+		:global(body:not(:has(#starlight__sidebar:popover-open)) .sl-menu-button .close-menu) {
+			display: none;
+		}
+		:global(body:has(#starlight__sidebar:popover-open) .sl-menu-button .close-menu) {
+			display: inline;
+		}
+
+		.sidebar-content {
+			height: 100%;
+			min-height: max-content;
+			padding: 1rem var(--sl-sidebar-pad-x) 0;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		@media (min-width: 50rem) {
+			.sidebar-content::after {
+				content: '';
+				padding-bottom: 1px;
+			}
+		}
+
+		.main-frame {
+			padding-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height));
+			padding-inline-start: var(--sl-content-inline-start);
+		}
+
+		@media (min-width: 50rem) {
+			:global([data-has-sidebar]) .header {
+				padding-inline-end: var(--sl-nav-pad-x);
+			}
+			.sidebar-pane {
+				display: block;
+				width: var(--sl-sidebar-width);
+				background-color: var(--sl-color-bg-sidebar);
+				border-inline-end: 1px solid var(--sl-color-hairline-shade);
+			}
+		}
+	}
+</style>
