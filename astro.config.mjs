@@ -1,11 +1,13 @@
 // @ts-check
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 import starlightThemeObsidian from "starlight-theme-obsidian";
 
 export default defineConfig({
   site: "https://til.hyunsang.dev",
-  markdown: {},
+  markdown: { remarkPlugins: [remarkMath], rehypePlugins: [rehypeKatex] },
   // starlight-site-graph가 브라우저에서 micromatch(내부 picomatch@2.3.1)를 그대로 import하는데,
   // 해당 버전이 모듈 최상단에서 가드 없이 process.platform/process.version을 참조해
   // "ReferenceError: process is not defined"로 크래시함. 빌드 타임에 리터럴로 치환해 우회.
@@ -14,12 +16,14 @@ export default defineConfig({
       "process.platform": JSON.stringify(process.platform),
       "process.version": JSON.stringify(process.version),
     },
-    // vite.define은 optimizeDeps(esbuild 사전 번들링)에는 자동 전파되지 않아 별도로 지정해야 함.
+    // vite.define은 optimizeDeps(Rolldown 사전 번들링)에는 자동 전파되지 않아 별도로 지정해야 함.
     optimizeDeps: {
-      esbuildOptions: {
-        define: {
-          "process.platform": JSON.stringify(process.platform),
-          "process.version": JSON.stringify(process.version),
+      rolldownOptions: {
+        transform: {
+          define: {
+            "process.platform": JSON.stringify(process.platform),
+            "process.version": JSON.stringify(process.version),
+          },
         },
       },
     },
@@ -64,6 +68,11 @@ export default defineConfig({
           { autogenerate: { directory: "개인적인" } },
         ] },
       ],
+      customCss: ["katex/dist/katex.min.css", "./src/styles/custom.css"],
+      // starlight-theme-obsidian의 PageFrame이 Starlight 0.42의 popover 기반 모바일 메뉴와 호환되지 않아 로컬 수정본 사용.
+      components: {
+        PageFrame: "./src/components/PageFrame.astro",
+      },
       defaultLocale: "root",
       locales: {
         root: { label: "한국어", lang: "ko" },
