@@ -1,0 +1,22 @@
+---
+title: "GitHub를 보다 안전하게 사용하기"
+---
+
+- 개인 프로젝트를 진행하거나 회사에서 개발을 진행할 때 GitHub를 많이 사용하게 되는데, 언어마다 다르겠지만 패키지 종속성으로 인해서 어쩔 수 없이 패키지를 사용해야할 경우가 발생함.
+- 이러한 패키지들의 단점은 다양한 취약점이 발생할 수 있다는 단점이 있고, 나도 모르는 사이에 취약한 패키지 버전을 사용하고 있을 수 있음.
+
+- **이러한 취약점을 어떻게 하면 효율적으로 관리하고 업데이트할 수 있을까?**
+    - Dependabot을 사용하면 GitHub에서 자동으로 취약점이 있는 패키지들을 찾아서 PR를 생성하고, PR을 Merge하면 취약점이 있는 패키지를 업데이트 할 수 있음.
+    - Dependabot은 패키지 뿐만 아니라 코드 내에 내포되어 있는 보안 취약점까지 찾아서 알려주기 때문에, GitHub를 사용하면서 보안에 대한 걱정이 있는 경우 사용하면 좋음.
+    - Dependabot를 사용하고 싶으면 [Dependabot 빠른 시작 가이드](https://docs.github.com/ko/code-security/tutorials/secure-your-dependencies/dependabot-quickstart)을 참고하여 설정할 수 있음.
+
+- **그럼 이러한 취약점들을 효율적으로 관리해 주는 Dependabot의 문제점은?**\
+    - 보안 경고와 자동 PR를 대량 생성해 개발자가 실제로 중요한 보안 문제인지 구분하기 어렵게 함.
+    - 경고에는 허위 CVSS 점수와 낮은 호환성 지표가 포함되어서 불필요한 불안감을 조성함.
+    - 이러한 과도한 알림은 보안 대응의 신뢰도와 효율성을 저하시키는 원인으로 지적됨.
+
+- **그럼 대체제로는?**
+    - Go언어에서는 [govulncheck GitHub Action](https://docs.vulncheck.com/kr/indices/open-source-package-managers#golang-%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%B0%8F-%EB%B2%84%EC%A0%84)을 설정하여 매일 자동 검사를 수행할 수 있도록 하면 됨.
+        - 실제 취약점이 발견될 때만 알림을 발송
+        - 자동 PR을 생성하지 않아, 개발자가 중요한 보안 이슈에 집중할 수 있음
+    - [VulnCheck](https://docs.vulncheck.com/kr/indices/open-source-package-managers)에서는 다양한 언어에서 종속성 패키지의 취약점을 검사할 수 있는 기능이 있음.
